@@ -1,10 +1,10 @@
 - name: Prompting variables
-  host: local
+  hosts: local
   connection: local
   vars_prompt:
     - name: username 
-      promt: Enter valid name
-      private: False
+      prompt: Enter valid name
+      private: false
 
     - name: password
       prompt: Enter password
