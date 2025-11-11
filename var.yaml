@@ -1,0 +1,9 @@
+- name: variable file
+  hosts: node
+  vars_files:
+    - vars.yaml
+
+  tasks:
+    - name: Refering vars_files
+      ansible.buitin.debug:
+        msg: "{{}}"
