@@ -1,8 +1,8 @@
-- name: Installing ansible
+- name: install ansible 
   hosts: node
   become: yes
   tasks:
-  - name: install ansible
-    ansible.builtin.package:
-      name: nginx
-      state: present
+    - name: installing ansible
+      ansible.builtin.package:
+        name: ansible
+        state: present
