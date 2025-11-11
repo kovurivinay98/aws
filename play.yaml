@@ -1,0 +1,11 @@
+- name: playing with variables
+  hosts: node
+  become: yes
+  vars:
+    name: india
+    status: won
+    trophy: champions
+  tasks:
+    - name: palying with variables
+      ansible.builtin.debug:
+        msg: "team {{ name }} {{ status }} {{ trophy }} trophy"
