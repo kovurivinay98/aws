@@ -1,0 +1,8 @@
+- name: installing tomcat
+  hosts: node
+  become: yes
+  tasks:
+   - name: installing tomcat
+     ansible.builtin.package:
+      name: tomcat
+      state: present  
