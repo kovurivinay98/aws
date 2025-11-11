@@ -1,0 +1,8 @@
+- name: Inventory level
+  hosts: node
+  become: yes
+  tasks:
+    - name: inventory variables
+      ansible.builtin.debug:
+        msg: "{{dev}} {{ops}}"
+  
