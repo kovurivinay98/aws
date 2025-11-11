@@ -1,0 +1,11 @@
+- name: task levl
+  hosts: node
+  become: yes
+  tasks:
+    - name: task level
+      vars:
+        r: rest
+        q: quits
+      ansible.builtin.debug:
+        msg: " r refers {{ r }},q refers {{ q }}"
+    
