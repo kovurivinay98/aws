@@ -1,5 +1,5 @@
 - name: Prompting variables
-  hosts: localhost
+  hosts: local
   connection: local
   vars_prompt:
     - name: username 
