@@ -1,0 +1,8 @@
+- name: Installing ansible
+  hosts: local
+  connection: local
+  tasks:
+    - name: install ansible
+      ansible.builin.pacckage:
+        name: nginx
+        state:present
