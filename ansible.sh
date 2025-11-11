@@ -1,6 +1,6 @@
 userid=$(id -u)
 echo "userid is $userid"
-if [ $userid -eq 0]
+if [ $userid -eq 0 ]
 then
     dnf list installed ansible
         if [ $? -ne 0 ]
