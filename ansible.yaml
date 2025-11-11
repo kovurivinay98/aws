@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-    - name: install ansible
-      ansible.builtin.package:
-        name: nginx
-        state: present
+  - name: install ansible
+    ansible.builtin.package:
+      name: nginx
+      state: present
