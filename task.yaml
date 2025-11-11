@@ -1,11 +1,18 @@
 - name: task levl
   hosts: node
   become: yes
+  vars:
+    r: romeo
+    q: queen
   tasks:
     - name: task level
       vars:
         r: rest
         q: quits
+      ansible.builtin.debug:
+        msg: " r refers {{ r }},q refers {{ q }}"
+
+    - name: play level
       ansible.builtin.debug:
         msg: " r refers {{ r }},q refers {{ q }}"
     
