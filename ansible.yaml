@@ -1,6 +1,6 @@
 - name: Installing ansible
-  hosts: local
-  connection: local
+  hosts: node
+  become: yes
   tasks:
   - name: install ansible
     ansible.builtin.package:
