@@ -5,5 +5,5 @@
 
   tasks:
     - name: Refering vars_files
-      ansible.buitin.debug:
+      ansible.builtin.debug:
         msg: "{{F}} {{M}} {{L}} {{S}}"
